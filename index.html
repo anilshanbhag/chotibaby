@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chotibaby - Home</title>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Choti Baby's site</h1>
+	</header>
+	<main>
+		<p>Hello there, I'm Swetha Itchapurapu, also known as Choti Baby. This is my personal website where I share my thoughts, experiences, and interests. Thanks for stopping by!</p>
+        <img id="random-photo" src="">
+	</main>
+	<footer>
+		<p>Contact: You can reach me at i@chotibaby.com</p>
+    <p>Copyright &copy; 2023 Swetha. All rights reserved.</p>
+	</footer>
+</body>
+<script>
+  var images = [
+    "images/photo1.jpg",
+    "images/photo2.jpg",
+    "images/photo3.jpg",
+    "images/photo4.jpg"
+  ];
+  var randomIndex = Math.floor(Math.random() * images.length);
+  var randomImage = images[randomIndex];
+  document.getElementById("random-photo").src = randomImage;
+</script>
+</html>
+
